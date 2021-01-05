@@ -1,11 +1,9 @@
 import random as rd
-import matplotlib.pyplot as plt
 
 def getLosingDoor(host, numOfDoors, playerChoice):
     i = 1
     while (i == host or i == playerChoice):
         i = (i+1) % (numOfDoors)
-
     return i
 
 def switchDoor(montyDoor, numOfDoors, playerChoice):
